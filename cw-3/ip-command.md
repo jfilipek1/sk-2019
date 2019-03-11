@@ -28,6 +28,8 @@ ip
 |   ``addr``    |                               | infirmacje o adresacji i własnościach interfejsów |
 |               |   ``ip addr``                 | informacja o wszystkich interfejsach              |
 |               |   ``ip addr show dev enp0s3`` | informacja o konkretnym interfejsie               |
+|               |   ``ip addr add 172.16.100.10/24 dev enp0s3`` | dodaj adres do urządzenia enp0s3               |
+|               |   ``ip addr del 172.16.100.10/24 dev enp0s3`` | usuń adres z urządzenia enp0s3               |
 |   ``link``    |     ``ip link set enp0s3 down``   | wyłącza interfejs emp0s3 |
 |                |    ``ip link set enp0s3 up``  | włącza interfejs emp0s3 |
 |   ``route``   |  | |
