@@ -41,7 +41,7 @@ Zadanie
 ------------
 
 ![zadanie 3](cwiczenia3.svg)
-
+zaktualizowac ten plik
 1.1 Przygotuj konfigurację sieci zgodnie z powyższym diagramem, 
 1.2 Przetestuj połączenie poleceniem ping
 2.1 Zainstaluj na komputerze ``PC1`` serwer programu ``HTTP CHAT`` dostępnego pod adresem ``https://github.com/jkanclerz/http-chat``
