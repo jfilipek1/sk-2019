@@ -15,6 +15,7 @@ ip
 | ------------- |:-------------| :---------------| 
 |   ``route``    |                               | |
 |               |   ``ip route add``             | |
+|               |   ``ip route del``             | |
 |               |   ``ip route add default via``             | |
 |               |   ``ip route get``             | |
 |               |   ``ip route show``             | |
