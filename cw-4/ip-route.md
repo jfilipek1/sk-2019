@@ -17,6 +17,7 @@ ip
 |               |   ``ip route add``             | |
 |               |   ``ip route add default via``             | |
 |               |   ``ip route get``             | |
+|               |   ``ip route show``             | |
 
 
 Zadanie
