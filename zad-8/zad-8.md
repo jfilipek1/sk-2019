@@ -26,7 +26,7 @@ PC0
 ---
 |  interfejs   | adres  |
 |:-------------| :------| 
-| eth0 | zapewnia usługodawca |
+| eth0 |  |
 | eth1 | 172.22.160.1/23  |
 | eth2 | 172.22.128.1/19  |
 
@@ -44,18 +44,18 @@ PC2
 
 --------------
 
-Zmiana adresów ip:  
-``ip addr add`` + adres ip + ``dev`` + nazwa interfejsu  
-``ip link set`` + nazwa interfejsu + ``up``
+1. Zmiana adresów ip na każdej z maszyn:  
+``ip addr add`` *IP* ``dev`` *interfejs*  
+``ip link set`` *interfejs* ``up``
 
-Włączenie ip forwarding na PC0:  
+2. Włączenie ip forwarding na PC0:  
 ``sysctl -w net.ipv4.ip_forward=1``
 
-Dodanie trasy na PC1 i PC2:   
-``ip route add default via`` + adres ip PC0
+3. Dodanie routingu na maszynach PC1 i PC2   
+``ip route add default via`` *IP PC0*
 
-Udostępnienie internetu dla LAN1 i LAN2  
-na PC1 i PC2:  
-``/etc/resolv.conf`` - zmiana dns  
-na PC0:  
-``iptables -t nat -A POSTROUTING -o`` + nazwa interfejsu z internetem + ``-j MASQUERADE``
+4. Zmiana adresów DNS na PC1 i PC2  
+``/etc/resolv.conf``  
+
+5. Udostępnienie internetu na PC0:  
+``iptables -t nat -A POSTROUTING -o`` *interfejs* ``-j MASQUERADE``
