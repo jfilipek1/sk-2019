@@ -62,4 +62,4 @@ PC2
 
 Efekt końcowy
 
-![6](6.png)
+![6](6.PNG)
