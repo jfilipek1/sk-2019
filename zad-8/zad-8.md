@@ -59,3 +59,7 @@ PC2
 
 5. Udostępnienie internetu na PC0:  
 ``iptables -t nat -A POSTROUTING -o`` *interfejs* ``-j MASQUERADE``
+
+Efekt końcowy
+
+![6](6.png)
